@@ -26,8 +26,21 @@ public class LazySingletonTest
 }
 class President
 {
-    private static volatile President instance=null;    //保证instance在所有线程中同步
-    //private避免类在外部被实例化
+    /**
+     * @Author Johann
+     * @Description  保证instance在所有线程中同步
+     * @Date 17:20 2019-7-11
+     * @Param
+     * @return 
+     **/
+    private static volatile President instance=null;
+    /**
+     * @Author Johann
+     * @Description private避免类在外部被实例化
+     * @Date 17:20 2019-7-11
+     * @Param []
+     * @return
+     **/
     private President()
     {
         System.out.println("产生一个总统！");

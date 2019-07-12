@@ -18,6 +18,7 @@ class SunWukong extends JPanel implements Cloneable
         JLabel l1=new JLabel(new ImageIcon("src/PrototypeSameTest.jpg"));
         this.add(l1);
     }
+    @Override
     public Object clone()
     {
         SunWukong w=null;
@@ -35,6 +36,13 @@ class SunWukong extends JPanel implements Cloneable
         return w;
     }
 }
+/**
+ * @Author Johann
+ * @Description //TODO
+ * @Date 17:13 2019-7-11
+ * @Param 
+ * @return 
+ **/
 public class PrototypeSameTest
 {
     public static void main(String[] args)

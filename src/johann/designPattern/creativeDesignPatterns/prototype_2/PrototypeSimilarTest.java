@@ -10,20 +10,26 @@ public class PrototypeSimilarTest
 {
     public static void main(String[] args) throws CloneNotSupportedException
     {
-        citation obj1=new citation("张三","同学：在2016学年第一学期中表现优秀，被评为三好学生。","韶关学院");
+        Citation obj1=new Citation("张三","同学：在2016学年第一学期中表现优秀，被评为三好学生。","韶关学院");
         obj1.display();
-        citation obj2=(citation) obj1.clone();
+        Citation obj2=(Citation) obj1.clone();
         obj2.setName("李四");
         obj2.display();
     }
 }
-//奖状类
-class citation implements Cloneable
+/**
+ * @Author Johann
+ * @Description 奖状类
+ * @Date 17:21 2019-7-11
+ * @Param 
+ * @return 
+ **/
+class Citation implements Cloneable
 {
     String name;
     String info;
     String college;
-    citation(String name,String info,String college)
+    Citation(String name,String info,String college)
     {
         this.name=name;
         this.info=info;
@@ -42,9 +48,10 @@ class citation implements Cloneable
     {
         System.out.println(name+info+college);
     }
+    @Override
     public Object clone() throws CloneNotSupportedException
     {
         System.out.println("奖状拷贝成功！");
-        return (citation)super.clone();
+        return (Citation)super.clone();
     }
 }
