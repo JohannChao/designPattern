@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<config>-->
+	<!--<className>ConcreteFactory2</className>-->
+<!--</config>-->
+
+<!-- 适配器模式 -->
+<!--
+<config>
+	<className>OpticalAdapter</className>
+</config>-->
+<config>
+	<className>ElectricAdapter</className>
+</config>
