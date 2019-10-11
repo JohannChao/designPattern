@@ -40,7 +40,7 @@ class Bajie extends JPanel
     private static Bajie instance=new Bajie();
     private Bajie()
     {
-        JLabel l1=new JLabel(new ImageIcon("src/HungrySingletonTest.jpg"));
+        JLabel l1=new JLabel(new ImageIcon("src/resources/img/HungrySingletonTest.jpg"));
         this.add(l1);
     }
     public static Bajie getInstance()

@@ -15,7 +15,7 @@ class SunWukong extends JPanel implements Cloneable
     public SunWukong()
     {
         System.out.println("新建原型成功");
-        JLabel l1=new JLabel(new ImageIcon("src/PrototypeSameTest.jpg"));
+        JLabel l1=new JLabel(new ImageIcon("src/resources/img/PrototypeSameTest.jpg"));
         this.add(l1);
     }
     @Override
